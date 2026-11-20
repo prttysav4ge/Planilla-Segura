@@ -1,0 +1,78 @@
+{
+  "empresa": {
+    "nombre": "Empresa Ejemplo S.A.C.",
+    "ruc": "20500000001",
+    "sede": "Sede central"
+  },
+  "caja": {
+    "nombre": "Caja Municipal Ejemplo"
+  },
+  "campana": {
+    "id": "escolar-2027",
+    "nombre": "Campaña escolar 2027",
+    "fechaCorte": "15 de febrero",
+    "fechaEntrega": "28 de febrero",
+    "lugarEntrega": "la sede central",
+    "mesPrimerDescuento": 2,
+    "anioPrimerDescuento": 2027,
+    "topePorcentaje": 30
+  },
+  "mypes": [
+    {
+      "id": "calzados",
+      "nombre": "Calzados Ejemplo",
+      "rubro": "Calzado",
+      "ruc": "20600000011",
+      "distrito": "El Porvenir, Trujillo",
+      "productos": [
+        { "id": "zapatillas", "nombre": "Zapatillas escolares", "precio": 120, "emoji": "👟", "unidad": "pares", "unidadSingular": "par", "descripcion": "Zapatilla blanca de lona con suela antideslizante.", "tallas": ["32", "33", "34", "35", "36", "37", "38"] },
+        { "id": "zapatos", "nombre": "Zapatos escolares de cuero", "precio": 150, "emoji": "👞", "unidad": "pares", "unidadSingular": "par", "descripcion": "Zapato negro de cuero con pasador, hecho a mano.", "tallas": ["32", "33", "34", "35", "36", "37", "38"] }
+      ]
+    },
+    {
+      "id": "mochilas",
+      "nombre": "Mochilas Ejemplo",
+      "rubro": "Mochilas",
+      "ruc": "20600000022",
+      "distrito": "Gamarra, La Victoria",
+      "productos": [
+        { "id": "mochila", "nombre": "Mochila escolar reforzada", "precio": 90, "emoji": "🎒", "unidad": "mochilas", "unidadSingular": "mochila", "descripcion": "Lona impermeable, espaldar acolchado y dos bolsillos.", "tallas": ["Mediana", "Grande"] },
+        { "id": "lonchera", "nombre": "Lonchera térmica", "precio": 45, "emoji": "🧃", "unidad": "loncheras", "unidadSingular": "lonchera", "descripcion": "Interior térmico lavable con correa ajustable.", "tallas": ["Única"] }
+      ]
+    },
+    {
+      "id": "confecciones",
+      "nombre": "Confecciones Ejemplo",
+      "rubro": "Uniformes",
+      "ruc": "20600000033",
+      "distrito": "Villa El Salvador, Lima",
+      "productos": [
+        { "id": "uniforme", "nombre": "Uniforme escolar completo", "precio": 180, "emoji": "👕", "unidad": "uniformes", "unidadSingular": "uniforme", "descripcion": "Camisa, pantalón o falda y chompa. Tela drill.", "tallas": ["6", "8", "10", "12", "14", "16"] },
+        { "id": "buzo", "nombre": "Buzo deportivo", "precio": 110, "emoji": "🩳", "unidad": "buzos", "unidadSingular": "buzo", "descripcion": "Casaca y pantalón de franela con logo bordado.", "tallas": ["6", "8", "10", "12", "14", "16"] }
+      ]
+    }
+  ],
+  "trabajadores": [
+    { "id": "t1", "nombre": "Ana Torres", "dni": "40112233", "area": "Administración", "sueldo": 2500, "otrosDescuentos": 0 },
+    { "id": "t2", "nombre": "Luis Ramos", "dni": "41223344", "area": "Logística", "sueldo": 1800, "otrosDescuentos": 100 },
+    { "id": "t3", "nombre": "Rosa Díaz", "dni": "42334455", "area": "Contabilidad", "sueldo": 2200, "otrosDescuentos": 0 },
+    { "id": "t4", "nombre": "Carlos Vega", "dni": "43445566", "area": "Almacén", "sueldo": 1130, "otrosDescuentos": 200 },
+    { "id": "t5", "nombre": "María Quispe", "dni": "44556677", "area": "Ventas", "sueldo": 3200, "otrosDescuentos": 0 },
+    { "id": "t6", "nombre": "Jorge Huamán", "dni": "45667788", "area": "Mantenimiento", "sueldo": 1500, "otrosDescuentos": 150 },
+    { "id": "t7", "nombre": "Lucía Mendoza", "dni": "46778899", "area": "Atención al cliente", "sueldo": 2800, "otrosDescuentos": 0 },
+    { "id": "t8", "nombre": "Pedro Salazar", "dni": "47889900", "area": "Sistemas", "sueldo": 1900, "otrosDescuentos": 0 },
+    { "id": "t9", "nombre": "Carmen Flores", "dni": "48990011", "area": "Gerencia", "sueldo": 4200, "otrosDescuentos": 300 },
+    { "id": "t10", "nombre": "Diego Chávez", "dni": "49001122", "area": "Producción", "sueldo": 1350, "otrosDescuentos": 0 }
+  ],
+  "solicitudes": [
+    { "id": "s1", "trabajadorId": "t2", "mypeId": "calzados", "productoId": "zapatillas", "talla": "34", "cuotas": 3, "estado": "aprobada", "autorizacionId": "AUT-27-0001" },
+    { "id": "s2", "trabajadorId": "t3", "mypeId": "calzados", "productoId": "zapatillas", "talla": "36", "cuotas": 3, "estado": "aprobada", "autorizacionId": "AUT-27-0002" },
+    { "id": "s3", "trabajadorId": "t8", "mypeId": "calzados", "productoId": "zapatillas", "talla": "35", "cuotas": 1, "estado": "entregada", "autorizacionId": "AUT-27-0003" },
+    { "id": "s4", "trabajadorId": "t5", "mypeId": "mochilas", "productoId": "mochila", "talla": "Grande", "cuotas": 3, "estado": "aprobada", "autorizacionId": "AUT-27-0004" },
+    { "id": "s5", "trabajadorId": "t7", "mypeId": "confecciones", "productoId": "uniforme", "talla": "10", "cuotas": 6, "estado": "entregada", "autorizacionId": "AUT-27-0005" },
+    { "id": "s6", "trabajadorId": "t10", "mypeId": "calzados", "productoId": "zapatos", "talla": "34", "cuotas": 6, "estado": "aprobada", "autorizacionId": "AUT-27-0006" },
+    { "id": "s7", "trabajadorId": "t4", "mypeId": "confecciones", "productoId": "uniforme", "talla": "12", "cuotas": 1, "estado": "pendiente" },
+    { "id": "s8", "trabajadorId": "t6", "mypeId": "mochilas", "productoId": "mochila", "talla": "Mediana", "cuotas": 3, "estado": "pendiente" },
+    { "id": "s9", "trabajadorId": "t9", "mypeId": "calzados", "productoId": "zapatos", "talla": "37", "cuotas": 6, "estado": "pendiente" }
+  ]
+}
